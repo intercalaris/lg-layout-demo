@@ -1,0 +1,289 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+section, header, footer, h1, span, p, a {
+  text-align: center;
+}
+html {
+  font-size: 62.5%;
+  min-height: 100%;
+  font-family: 'Barlow Condensed', 'sans-serif';
+}
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 2rem;
+}
+/* https://stackoverflow.com/questions/2204634/how-to-disable-automatic-links-coloring-without-selecting-a-color */
+a, a:hover, a:visited, a:active {
+  text-decoration: none;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+p {
+  line-height: 2.5rem;
+  font-size: 2.5rem;
+  padding-left: 14%;
+  padding-right: 14%;
+}
+.one {
+  background-color: #66768a;
+  color: white;
+  height: 90vh;
+}
+header span {
+  float: left;
+  margin: 20px;
+}
+.one img {
+  margin: 20px;
+  height: 4rem;
+}
+.one a {
+  float: right;
+  margin: 20px
+}
+header {
+  font-weight: 500;
+}
+a.donate-button {
+  background-color: white;
+  color: #66768a;
+  line-height: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 4px;
+}
+h1 {
+  font-size: 7.6rem;
+  font-weight: 500;
+  margin: 2rem;
+}
+h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  padding-top: 70px;
+  line-height: 8rem;
+}
+.watch {
+  width: 100%;
+  margin: 0;
+  display: block;
+}
+.watch img {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+.watch .watch-text {
+  width: 20%;
+  vertical-align: middle;
+  line-height: 4rem;
+  font-weight: 300;
+  color: white;
+}
+.two {
+  height: 60vh;
+  color: black;
+}
+.two p, .four p {
+    padding-left: 23%;
+    padding-right: 23%;
+    font-size: 2.3rem;
+    font-weight: 400
+}
+.three {
+  background-color: #dbdfe2;
+  height: 100vh;
+  color: black;
+}
+.visit-gym, .visit-you {
+  width: 50%;
+  float: left;
+  height: 100%;
+}
+.visit-gym span, .visit-you span {
+  display: block;
+  font-weight: 600;
+  font-size: 2.3rem;
+  margin: 25px;
+}
+.visit-gym a, .visit-you a {
+  color: black;
+}
+.visit-gym p, .visit-you p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.three img {
+  width: 70%;
+  box-shadow: 0 0 10px 0.5px #818384;
+  margin-top: 60px;
+}
+.visit-gym a, .visit-you a, .four a {
+  border: 1px solid black;
+  margin: 30px auto;
+  line-height: 4rem;
+  width: 27%;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 600
+}
+
+.four {
+  height: 70vh;
+  clear: left;
+  color: black;
+}
+.four a {
+  width: 15%;
+  color: black;
+}
+
+footer {
+  background-color: #161f2a;
+  height: 17rem;
+  color: white;
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
+  clear: both;
+}
+footer a {
+  color: white;
+}
+footer img {
+  height: 2rem;
+  padding: 1px;
+  margin-bottom: 5px;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+  line-height: 1.5rem;
+}
+.footer-left, .footer-right {
+  width: 50%;
+  padding: 10px 5px 10px 30px;
+}
+.footer-right {
+  height:11rem;
+}
+
+.site-map, .contribute, .level {
+  display: block;
+  clear: both;
+  width: 10rem;
+  text-align: left;
+  line-height: 2rem;
+}
+.site-map, .contribute {
+  color: #66768a;
+}
+.contribute {
+  padding-top: 6px;
+}
+.volunteer {
+  padding-bottom: 4px;
+}
+
+.classes, .hire-us, .give, .volunteer {
+  float: left;
+}
+.footer-left img {
+  margin-right: 10px;
+}
+.level-ground, .mixed, .milk, .boston, .number, .email {
+  display: block;
+  text-align: left;
+  width: 15rem;
+  margin-right: 80px;
+  float: right;
+  clear: both;
+  font-weight: 500;
+}
+.milk, .boston, .number {
+  font-weight: 300;
+}
+.level {
+  width: 96%;
+  border-top: 1px solid white;
+  line-height: 2rem;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.lg-logo-adio {
+  height: 30px;
+  float: right;
+  margin-top: -6px;
+}
+
+.toy-cansao-adio {
+  clear: both;
+  margin-top: 5px;
+}
+
+
+
+
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+.header-left {
+  display: none;
+}
+/* remove all li but menu icon */
+@media screen and (max-width: 1024px) {
+  .one {
+    height: 95vh
+  }
+}
+
+/* trigrid horizontal to vertical */
+@media screen and (max-width: 768px) {
+  .three {
+    height: 160vh;
+  }
+  .three section {
+    display: block;
+    width: 100%;
+    height: 80vh
+  }
+
+}
+
+/* change color of background */
+@media screen and (max-width: 600px) {
+  .two p, .four p {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
