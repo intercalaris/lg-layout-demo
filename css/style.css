@@ -213,6 +213,7 @@ footer img {
 
 .classes, .hire-us, .give, .volunteer {
   float: left;
+  margin-right: 4px;
 }
 .footer-left img {
   margin-right: 10px;
